@@ -13,34 +13,31 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sample);
-
-    }
-
-    public void onMyClick(View v){
+        setContentView(R.layout.mainact);
 
     }
 
     void init(){
-        r1 = (RadioButton)findViewById(R.id.radioButton);
-        r2 = (RadioButton)findViewById(R.id.radioButton2);
-        r1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
-                    Toast.makeText(getApplicationContext(),"고등학생이 선택됨.",Toast.LENGTH_SHORT).show();
 
-                }
-            }
-        });
-        r2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
-                    Toast.makeText(getApplicationContext(),"대학생이 선택됨.",Toast.LENGTH_SHORT).show();
-
-                }
-            }
-        });
+//        r1 = (RadioButton)findViewById(R.id.radioButton);
+//        r2 = (RadioButton)findViewById(R.id.radioButton2);
+//        r1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if (isChecked){
+//                    Toast.makeText(getApplicationContext(),"고등학생이 선택됨.",Toast.LENGTH_SHORT).show();
+//
+//                }
+//            }
+//        });
+//        r2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if (isChecked){
+//                    Toast.makeText(getApplicationContext(),"대학생이 선택됨.",Toast.LENGTH_SHORT).show();
+//
+//                }
+//            }
+//        });
     }
 }
