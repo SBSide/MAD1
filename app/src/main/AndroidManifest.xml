@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Restact"></activity>
+        <activity android:name=".Restact" />
+        <activity android:name=".Mainmenu"></activity>
     </application>
 
 </manifest>
