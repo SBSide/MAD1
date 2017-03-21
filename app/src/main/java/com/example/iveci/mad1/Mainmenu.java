@@ -21,7 +21,7 @@ public class Mainmenu extends AppCompatActivity {
         }
 
         else if (v.getId() == R.id.actres) {
-            Intent a = new Intent(Mainmenu.this, MainActivity.class);
+            Intent a = new Intent(Mainmenu.this, Restact.class);
             startActivity(a);
         }
     }

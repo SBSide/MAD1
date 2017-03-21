@@ -24,14 +24,19 @@ public class Restact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setTitle("레스토랑 예약시스템");
-        init();
         setContentView(R.layout.activity_restact);
+        init();
         s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
+                d1.setVisibility(View.VISIBLE);
+                ch1.setVisibility(View.VISIBLE);
+                ch1.getDrawingTime();
+                b1.setVisibility(View.VISIBLE);
+                b2.setVisibility(View.VISIBLE);
             }
         });
+
     }
 
     public void resClick(View v){
@@ -45,7 +50,7 @@ public class Restact extends AppCompatActivity {
     }
 
     public void init(){
-        s1 = (Switch) findViewById(R.id.switch1);
+        s1 = (Switch) findViewById(R.id.start);
         b1 = (Button) findViewById(R.id.bprev);
         b2 = (Button) findViewById(R.id.bnext);
         d1 = (DatePicker) findViewById(R.id.datePicker2);
