@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.GridLayout;
 import android.widget.Switch;
 import android.widget.TimePicker;
 
@@ -17,16 +19,24 @@ public class Restact extends AppCompatActivity {
     TimePicker t1;
     Chronometer ch1;
     EditText e1,e2,e3;
+    GridLayout g1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setTitle("레스토랑 예약시스템");
         init();
         setContentView(R.layout.activity_restact);
+        s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+            }
+        });
     }
 
     public void resClick(View v){
         if (v.getId() == R.id.bprev) {
+
         }
 
         else if (v.getId() == R.id.bnext) {
@@ -38,5 +48,13 @@ public class Restact extends AppCompatActivity {
         s1 = (Switch) findViewById(R.id.switch1);
         b1 = (Button) findViewById(R.id.bprev);
         b2 = (Button) findViewById(R.id.bnext);
+        d1 = (DatePicker) findViewById(R.id.datePicker2);
+        t1 = (TimePicker) findViewById(R.id.timePicker);
+        ch1 = (Chronometer) findViewById(R.id.chronometer3);
+        e1 = (EditText) findViewById(R.id.eadult);
+        e2 = (EditText) findViewById(R.id.eteen);
+        e3 = (EditText) findViewById(R.id.echild);
+        g1 = (GridLayout) findViewById(R.id.glresult);
+
     }
 }

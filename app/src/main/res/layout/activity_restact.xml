@@ -31,6 +31,7 @@
         <Chronometer
             android:id="@+id/chronometer3"
             android:textColor="#060eed"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"/>
@@ -44,16 +45,19 @@
         <DatePicker
             android:id="@+id/datePicker2"
             android:layout_width="wrap_content"
+            android:visibility="invisible"
             android:layout_height="wrap_content" />
 
         <TimePicker
             android:id="@+id/timePicker"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:visibility="invisible"
             android:background="#fbc1c1"
             android:columnCount="2"
             android:rowCount="3">
@@ -65,7 +69,7 @@
                 android:text="성인" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/eadult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -78,7 +82,7 @@
                 android:text="청소년" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/eteen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -91,7 +95,7 @@
                 android:text="어린이" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/echild"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -99,12 +103,20 @@
         </GridLayout>
 
         <GridLayout
-
+            android:id="@+id/glresult"
             android:background="#fbc1c1"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"></GridLayout>
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </GridLayout>
 
     </FrameLayout>
 
@@ -118,6 +130,7 @@
             android:id="@+id/bprev"
             android:layout_columnWeight="1"
             android:onClick="resClick"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이전" />
@@ -126,6 +139,7 @@
             android:id="@+id/bnext"
             android:layout_columnWeight="1"
             android:onClick="resClick"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="다음" />
